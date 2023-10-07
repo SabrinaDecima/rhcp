@@ -318,6 +318,11 @@ input{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
 
+  .comentarioA{
+    color:#941B0C;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
   textarea{
     background-color: #fbfbfb; 
     width: 405px; 

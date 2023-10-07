@@ -1,0 +1,20 @@
+$color-principal: #941B0C;
+$color-secundario: #ec9410;
+$color-terciario: #220901;
+
+$colores: black, white, beige;
+
+
+%flex-center{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+@mixin flex ($flex, $justify, $align){
+    display: $flex;
+    justify-content: $justify;
+    align-items: $align;
+}

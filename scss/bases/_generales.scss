@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat:wght@400;600&family=Indie+Flower&family=Monoton&family=Phudu:wght@300;400&family=Rubik+Iso&display=swap');
+
+/*------RESET------*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+/*-------aplicado a bootstrap------*/
+.navbar-brand  img{
+    width: 120px;
+    height: 120px;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    }
+.container-fluid{
+    background-color: $color-principal;
+    }
+.nav-item a{
+    font-size: 20px;
+    color: beige !important;
+    font-family:'Monoton', cursive;
+    margin: 5px;
+    position: sticky; 
+    }

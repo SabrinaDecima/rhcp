@@ -1,0 +1,28 @@
+footer{
+    background-color: $color-principal;
+    @include flex (flex, space-between, center)
+    h2{
+        color: $color-secundario;
+        font-size: 60px;
+        font-style: oblique;
+        font-family: 'Rubik Iso', cursive;
+        font-weight: 600;
+        padding-left: 10px;
+        img{
+        width: 120px;
+        height: 120px;
+        margin-left: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        }
+    }
+    div{
+        a{
+            img{
+                width: 55px;
+                height: 55px;
+                margin-right: 20px;
+            }
+        }
+    }
+}
