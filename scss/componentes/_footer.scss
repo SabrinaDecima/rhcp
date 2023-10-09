@@ -1,6 +1,6 @@
 footer{
     background-color: $color-principal;
-    @include flex (flex, space-between, center)
+    @include flex (flex, space-between, center);
     h2{
         color: $color-secundario;
         font-size: 60px;

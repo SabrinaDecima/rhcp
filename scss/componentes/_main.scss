@@ -39,7 +39,7 @@ main{
                 text-decoration: none;
                 color: beige;
                 font-size: 30px;
-                background-color: nth ($colores, 1);
+                background-color: nth($colores, 1);
                 padding: 5px;
             }
         }
@@ -71,7 +71,20 @@ main{
             font-family: 'Monoton', cursive;
             font-weight: 100px;
             background-color: $color-terciario;
-            z-index: 1;}
+            z-index: 1;
+            animation-name: slidein;
+            animation-duration: 3s;
+        }
+        @keyframes slidein{
+            from{
+                margin-right: 100%;
+                width: 300%;
+            }
+            to{
+                margin-right: 0;
+                width: 100%;
+            }
+        }
     }
     .grid-merch{
         width: 100%;
@@ -84,6 +97,9 @@ main{
         object-fit: cover;
         .grid-item{
             position: relative;
+            &:hover{
+                transform: scale(1.1);
+                }
             img{
                 width: 60%;
                 height: 100%;
@@ -100,6 +116,13 @@ main{
                 text-align: center;
                 button{
                     background-color: $color-principal;
+                    transition-property: width;
+                    transition-duration: 2s;
+                    transition-delay: 2s;
+                    &:hover{ 
+                        background-color: $color-secundario;
+                        width: 80%;
+                    }
                     a{
                         text-decoration: none;
                         color: nth($colores, 2);
@@ -125,8 +148,20 @@ main{
         font-family: 'Monoton', cursive;
         font-weight: 100px;
         background-color:$color-terciario;
+        animation-name: slidein;
+        animation-duration: 3s;
         h2{
 
+        }
+        @keyframes slidein{
+            from{
+                margin-right: 100%;
+                width: 300%;
+            }
+            to{
+                margin-right: 0;
+                width: 100%;
+            }
         }
     }
     .flex-integrante{
@@ -168,8 +203,20 @@ main{
             font-size: 30px;
             text-align: center;
             font-family: 'Monoton', cursive;
+            animation-name: slidein;
+            animation-duration: 3s;
             h2{
 
+            }
+            @keyframes slidein{
+                from{
+                    margin-right: 100%;
+                    width: 300%;
+                }
+                to{
+                    margin-right: 0;
+                    width: 100%;
+                }
             }
         }
         .album{
@@ -198,7 +245,6 @@ main{
         padding: 0;
         .tour{
             color: nth($colores, 1); 
-            font-size: 30px;
             text-align: center;
             font-family: 'Monoton', cursive;
             margin-right: 400px;
@@ -208,7 +254,7 @@ main{
             justify-content: center;
             text-align: center;
             h2{
-
+                font-size: 50px;
             }
         }
         .bloques-tour{
@@ -239,6 +285,9 @@ main{
                             list-style: none;
                             border-radius: 10px;
                             margin: 10px;
+                            &:hover{
+                                transform: scale(1.1);
+                            }
                         }
                     }
                 }
@@ -330,8 +379,10 @@ main{
                 border-radius: 10px;  
                 width: 420px;   
                 cursor: pointer;
+                &:active{
+                    background-color: $color-principal;
+                }
             }
-        }
-        
-    }
+        } 
+    } 
 }

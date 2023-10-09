@@ -67,7 +67,7 @@ main .hero {
       text-decoration: none;
       color: beige;
       font-size: 30px;
-      background-color: nth black, white, beige, 1;
+      background-color: black;
       padding: 5px; }
 
 main .regreso {
@@ -89,7 +89,17 @@ main .merchandising h2 {
   font-family: 'Monoton', cursive;
   font-weight: 100px;
   background-color: #220901;
-  z-index: 1; }
+  z-index: 1;
+  animation-name: slidein;
+  animation-duration: 3s; }
+
+@keyframes slidein {
+  from {
+    margin-right: 100%;
+    width: 300%; }
+  to {
+    margin-right: 0;
+    width: 100%; } }
 
 main .grid-merch {
   width: 100%;
@@ -102,6 +112,8 @@ main .grid-merch {
   object-fit: cover; }
   main .grid-merch .grid-item {
     position: relative; }
+    main .grid-merch .grid-item:hover {
+      transform: scale(1.1); }
     main .grid-merch .grid-item img {
       width: 60%;
       height: 100%;
@@ -116,7 +128,13 @@ main .grid-merch {
       width: 60%;
       text-align: center; }
       main .grid-merch .grid-item h3 button {
-        background-color: #941B0C; }
+        background-color: #941B0C;
+        transition-property: width;
+        transition-duration: 2s;
+        transition-delay: 2s; }
+        main .grid-merch .grid-item h3 button:hover {
+          background-color: #ec9410;
+          width: 80%; }
         main .grid-merch .grid-item h3 button a {
           text-decoration: none;
           color: white; }
@@ -135,7 +153,17 @@ main .grid-merch {
     text-align: center;
     font-family: 'Monoton', cursive;
     font-weight: 100px;
-    background-color: #220901; }
+    background-color: #220901;
+    animation-name: slidein;
+    animation-duration: 3s; }
+
+@keyframes slidein {
+  from {
+    margin-right: 100%;
+    width: 300%; }
+  to {
+    margin-right: 0;
+    width: 100%; } }
   .fondo-grupo .flex-integrante {
     color: #ec9410;
     margin-top: 20px;
@@ -163,7 +191,17 @@ main .discografia {
     color: #941B0C;
     font-size: 30px;
     text-align: center;
-    font-family: 'Monoton', cursive; }
+    font-family: 'Monoton', cursive;
+    animation-name: slidein;
+    animation-duration: 3s; }
+
+@keyframes slidein {
+  from {
+    margin-right: 100%;
+    width: 300%; }
+  to {
+    margin-right: 0;
+    width: 100%; } }
   main .discografia .album {
     margin: 10px;
     display: grid;
@@ -181,7 +219,6 @@ main .fondoTour {
   padding: 0; }
   main .fondoTour .tour {
     color: black;
-    font-size: 30px;
     text-align: center;
     font-family: 'Monoton', cursive;
     margin-right: 400px;
@@ -190,6 +227,8 @@ main .fondoTour {
     display: flex;
     justify-content: center;
     text-align: center; }
+    main .fondoTour .tour h2 {
+      font-size: 50px; }
   main .fondoTour .bloques-tour {
     margin-top: 30px;
     padding-bottom: 30px;
@@ -215,6 +254,8 @@ main .fondoTour {
         list-style: none;
         border-radius: 10px;
         margin: 10px; }
+        main .fondoTour .bloques-tour div .paises ul li:hover {
+          transform: scale(1.1); }
 
 /*----CONTACTO----*/
 main .contactoPrincipal {
@@ -270,7 +311,10 @@ main .contactoPrincipal {
       padding-left: 10px;
       margin-bottom: 20px;
       padding-top: 15px;
-      font-size: 20px; }
+      font-size: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
     main .contactoPrincipal .comentario .button-1 {
       color: white;
       height: 45px;
@@ -285,6 +329,8 @@ main .contactoPrincipal {
       border-radius: 10px;
       width: 420px;
       cursor: pointer; }
+      main .contactoPrincipal .comentario .button-1:active {
+        background-color: #941B0C; }
 
 footer {
   background-color: #941B0C;
@@ -310,216 +356,200 @@ footer {
     margin-right: 20px; }
 
 @media screen and (max-width: 1300px) {
-  .hero h2 {
+  main .hero h2 {
     font-size: 45px; }
-  .hero p {
+  main .hero p {
     font-size: 37px;
     text-align: center; }
-  .hero button a {
+  main .hero button a {
     text-align: center;
     font-size: 17px; } }
 
 @media screen and (max-width: 1150px) {
-  .hero h2 {
+  main .hero h2 {
     font-size: 45px; }
-  .hero p {
+  main .hero p {
     font-size: 37px;
     text-align: center; }
-  .hero button {
+  main .hero button {
     margin-bottom: 25px; }
-  .hero button a {
+  main .hero button a {
     text-align: center;
     font-size: 15px; } }
 
 @media screen and (max-width: 1075px) {
-  .album {
+  main .discografia .album {
     grid-template-columns: repeat(3, 1fr); }
-  .tour {
+  main .fondoTour .tour {
     margin-right: 200px;
     margin-left: 200px; }
-  .contactoPrincipal {
+  main .contactoPrincipal {
     width: 70%;
     height: 70%;
     margin-left: 15%; } }
 
 @media screen and (max-width: 1000px) {
-  .hero button {
+  main .hero button {
     opacity: 0; } }
 
 @media screen and (max-width: 960px) {
-  .regreso {
+  main .regreso {
     margin-bottom: 50px;
     flex-direction: column;
     align-items: center; }
-  .agotadas p {
+  main .regreso .agotadas p {
     font-size: 30px; } }
 
 @media screen and (max-width: 950px) {
-  .tour {
+  main .fondoTour .tour {
     font-size: 25px; }
-  .continentes {
+  main .fondoTour .bloques-tour div .continentes {
     font-size: 25px; }
-  .paises {
+  main .fondoTour .bloques-tour div .paises {
     font-size: 25px; } }
 
 @media screen and (max-width: 900px) {
-  .merchandising {
+  main .merchandising {
     font-size: 25px;
     font-weight: 80px; }
-  .grid-merch {
+  main .grid-merch {
     grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: 220px; }
-  .album {
+  main .discografia .album {
     margin-left: 40px;
     margin-top: 40px;
     margin-right: 40px;
     grid-template-columns: repeat(2, 1fr); } }
 
 @media screen and (max-width: 855px) {
-  .hero h2 {
+  main .hero h2 {
     font-size: 40px; }
-  .hero p {
+  main .hero p {
     font-size: 30px;
     text-align: center; }
-  .contactoPrincipal {
+  main .contactoPrincipal {
     width: 520px;
     height: auto; }
-  input {
+  main .contactoPrincipal .comentario input {
     width: 390px;
     height: 35px; } }
 
 @media screen and (max-width: 800px) {
-  header {
-    flex-direction: column; }
-  .titulointegrante {
+  main .fondo-grupo .titulointegrante {
     font-size: 25px;
     font-weight: 60px; }
-  .flex-integrante p {
+  main .fondo-grupo .flex-integrante div p {
     font-size: 100%; }
-  .discografiaSecundaria {
+  main .discografia .discografiaSecundaria {
     font-size: 25px;
     font-weight: 60px; }
-  .continentes {
+  main .fondoTour .bloques-tour div .continentes {
     display: flex;
     flex-direction: column; }
-  .paises ul li {
+  main .fondoTour .bloques-tour div .paises ul li {
     display: flex;
     flex-direction: column; }
-  .agotadas p {
+  main .regreso .agotadas p {
     font-size: 25px; }
-  .grid-merch {
+  main .grid-merch {
     padding-left: 130px; } }
 
 @media screen and (max-width: 770px) {
-  .contactoPrincipal {
+  main .contactoPrincipal {
     width: 460px;
     height: auto; }
-  input {
+  main .contactoPrincipal .comentario input {
     width: 370px;
     height: 30px; }
-  .regreso {
+  main .regreso {
     display: flex;
     justify-content: center;
     align-items: center; } }
 
 @media screen and (max-width: 750px) {
-  input {
+  main .contactoPrincipal .comentario input {
     width: 370px;
     height: 30px; } }
 
 @media screen and (max-width: 700px) {
-  .merchandising {
+  main .merchandising {
     font-size: 20px;
     font-weight: 60px; }
-  .contactoPrincipal {
+  main .contactoPrincipal {
     width: 440px;
     height: auto; }
-  input {
+  main .contactoPrincipal .comentario input {
     width: 358px;
     height: 30px; }
-  .grid-merch {
+  main .grid-merch {
     padding-left: 120px; } }
 
 @media screen and (max-width: 650px) {
-  .regreso img {
+  main .regreso img {
     width: 90%; }
-  .contactoPrincipal {
+  main .contactoPrincipal {
     width: 400px;
     height: auto; }
-  input {
+  main .contactoPrincipal .comentario input {
     width: 308px;
     height: 30px; }
-  .agotadas p {
+  main .regreso .agotadas p {
     font-size: 23px; }
-  .hero h2 {
+  main .hero h2 {
     font-size: 35px;
     text-align: center; }
-  .hero p {
+  main .hero p {
     font-size: 25px; }
-  .hero {
+  main .hero {
     padding: 0; } }
 
 @media screen and (max-width: 600px) {
-  .contactoPrincipal {
+  main .contactoPrincipal {
     width: 400px;
     height: auto; }
-  input {
+  main .contactoPrincipal .comentario input {
     width: 308px;
     height: 30px;
     padding-left: 5px; }
-  .regreso {
+  main .regreso {
     margin-bottom: 50px;
     flex-direction: column;
     align-items: center; }
-  .hero h2 {
+  main .hero h2 {
     text-align: left;
     margin: 0 auto; }
-  .hero p {
+  main .hero p {
     text-align: center; } }
 
 @media screen and (max-width: 550px) {
-  .regreso img {
+  main .regreso img {
     width: 80%; }
-  .titulointegrante {
+  main .fondo-grupo .titulointegrante {
     font-size: 20px;
     font-weight: 50px; }
-  .discografiaSecundaria {
+  main .discografia .discografiaSecundaria {
     font-size: 20px;
     font-weight: 50px; }
-  .agotadas p {
+  main .regreso .agotadas p {
     font-size: 18px; } }
 
 @media screen and (max-width: 480px) {
-  header {
-    position: static; }
-  header nav ul {
-    flex-direction: column;
-    align-items: center; }
-  header nav ul li {
-    margin: 0; }
-  .hero h2 {
+  main .hero h2 {
     text-align: center; }
-  .hero p {
+  main .hero p {
     text-align: center; } }
 
 @media screen and (max-width: 450px) {
-  .grid-merch {
+  main .grid-merch {
     grid-template-columns: 1fr; } }
 
 @media screen and (max-width: 400px) {
-  .album {
+  main .discografia .album {
     margin-left: 40px;
     margin-top: 40px;
     margin-right: 40px;
     grid-template-columns: repeat(1, 1fr); }
-  .hero h2 {
+  main .hero h2 {
     text-align: center; }
-  .hero p {
+  main .hero p {
     text-align: center; } }
-
-/**------PSEUDOELEMENTOS--------**/
-.grid-item button:hover {
-  background-color: #ec9410; }
-
-.button-1:active {
-  background-color: #941B0C; }
