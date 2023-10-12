@@ -259,7 +259,7 @@ main .fondoTour {
 
 /*----CONTACTO----*/
 main .contactoPrincipal {
-  width: 660px;
+  width: 50%;
   height: auto;
   margin: 80px auto;
   border-radius: 10px;
@@ -286,7 +286,7 @@ main .contactoPrincipal {
       font-size: 20px; }
     main .contactoPrincipal .comentario input {
       background-color: #fbfbfb;
-      width: 408px;
+      width: 80%;
       height: 40px;
       border-radius: 5px;
       border-style: solid;
@@ -301,7 +301,7 @@ main .contactoPrincipal {
       font-family: Verdana, Geneva, Tahoma, sans-serif; }
     main .contactoPrincipal .comentario textarea {
       background-color: #fbfbfb;
-      width: 405px;
+      width: 80%;
       height: 150px;
       border-radius: 5px;
       border-style: solid;
@@ -311,10 +311,7 @@ main .contactoPrincipal {
       padding-left: 10px;
       margin-bottom: 20px;
       padding-top: 15px;
-      font-size: 20px;
-      display: flex;
-      justify-content: center;
-      align-items: center; }
+      font-size: 20px; }
     main .contactoPrincipal .comentario .button-1 {
       color: white;
       height: 45px;
@@ -469,7 +466,13 @@ footer {
 @media screen and (max-width: 750px) {
   main .contactoPrincipal .comentario input {
     width: 370px;
-    height: 30px; } }
+    height: 30px; }
+  main .fondoTour .tour h2 {
+    font-size: 40px; }
+  main .fondoTour .bloques-tour div .continentes {
+    font-size: 25px; }
+  main .fondoTour .bloques-tour div .paises {
+    font-size: 23px; } }
 
 @media screen and (max-width: 700px) {
   main .merchandising {
@@ -504,6 +507,9 @@ footer {
     padding: 0; } }
 
 @media screen and (max-width: 600px) {
+  .navbar-brand img {
+    width: 90px;
+    height: 90px; }
   main .contactoPrincipal {
     width: 400px;
     height: auto; }
@@ -519,7 +525,21 @@ footer {
     text-align: left;
     margin: 0 auto; }
   main .hero p {
-    text-align: center; } }
+    text-align: center; }
+  main .fondoTour .tour h2 {
+    font-size: 32px; }
+  main .fondoTour .bloques-tour div .continentes {
+    font-size: 20px; }
+  main .fondoTour .bloques-tour div .paises {
+    font-size: 17px; }
+  main .fondoTour .bloques-tour div .paises ul li {
+    background-color: #941B0C; }
+  footer h2 img {
+    width: 90px;
+    height: 90px; }
+  footer div a img {
+    width: 40px;
+    height: 40px; } }
 
 @media screen and (max-width: 550px) {
   main .regreso img {
@@ -531,7 +551,14 @@ footer {
     font-size: 20px;
     font-weight: 50px; }
   main .regreso .agotadas p {
-    font-size: 18px; } }
+    font-size: 18px; }
+  main .contactoPrincipal {
+    width: 70%;
+    font-size: 70%; }
+  main .contactoPrincipal .comentario input {
+    width: 75%; }
+  main .contactoPrincipal .comentario textarea {
+    width: 75%; } }
 
 @media screen and (max-width: 480px) {
   main .hero h2 {
@@ -541,9 +568,18 @@ footer {
 
 @media screen and (max-width: 450px) {
   main .grid-merch {
-    grid-template-columns: 1fr; } }
+    grid-template-columns: 1fr; }
+  main .fondoTour .tour h2 {
+    font-size: 28px; }
+  main .fondoTour .bloques-tour div .continentes {
+    font-size: 15px; }
+  main .fondoTour .bloques-tour div .paises {
+    font-size: 13px; } }
 
 @media screen and (max-width: 400px) {
+  .navbar-brand img {
+    width: 80px;
+    height: 80px; }
   main .discografia .album {
     margin-left: 40px;
     margin-top: 40px;
@@ -552,4 +588,10 @@ footer {
   main .hero h2 {
     text-align: center; }
   main .hero p {
-    text-align: center; } }
+    text-align: center; }
+  footer h2 img {
+    width: 80px;
+    height: 80px; }
+  footer div a img {
+    width: 30px;
+    height: 30px; } }

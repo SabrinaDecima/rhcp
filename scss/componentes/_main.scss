@@ -299,7 +299,7 @@ main{
 /*----CONTACTO----*/
 main{
     .contactoPrincipal{
-        width: 660px; 
+        width: 50%; 
         height: auto;
         margin: 80px auto;
         border-radius: 10px;  
@@ -330,7 +330,7 @@ main{
             }
             input{
                 background-color: #fbfbfb; 
-                width: 408px; 
+                width: 80%; 
                 height: 40px; 
                 border-radius: 5px;  
                 border-style: solid; 
@@ -353,7 +353,7 @@ main{
             }
             textarea{
                 background-color: #fbfbfb; 
-                width: 405px; 
+                width: 80%; 
                 height: 150px; 
                 border-radius: 5px;  
                 border-style: solid; 

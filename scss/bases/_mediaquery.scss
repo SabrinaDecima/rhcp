@@ -272,6 +272,31 @@ main{
             }
         }
     }
+    .fondoTour{
+        .tour{
+            h2{
+                font-size: 40px;
+            }
+        }
+    }
+    .fondoTour{
+        .bloques-tour{
+            div{
+                .continentes{
+                    font-size: 25px;
+                }
+            }
+        }
+    }
+    .fondoTour{
+        .bloques-tour{
+            div{
+                .paises{
+                    font-size: 23px;
+                }
+            }
+        }
+    }
 }
 }
 
@@ -341,6 +366,12 @@ main{
 }
 
 @media screen and (max-width:600px){
+.navbar-brand{
+    img{
+        width: 90px;
+        height: 90px;
+    }
+}
 main{
     .contactoPrincipal{
         width: 400px; 
@@ -369,6 +400,60 @@ main{
     .hero{
         p{
         text-align: center;
+        }
+    }
+    .fondoTour{
+        .tour{
+            h2{
+                font-size: 32px;
+            }
+        }
+    }
+    .fondoTour{
+        .bloques-tour{
+            div{
+                .continentes{
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+    .fondoTour{
+        .bloques-tour{
+            div{
+                .paises{
+                    font-size: 17px;
+                }
+            }
+        }
+    }
+    .fondoTour{
+        .bloques-tour{
+            div{
+                .paises{
+                    ul{
+                        li{
+                            background-color: $color-principal;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+footer{
+    h2{
+        img{
+            width: 90px;
+            height: 90px;
+        }
+    }
+    div{
+        a{
+            img{
+                width: 40px;
+                height: 40px;
+            }
         }
     }
 }
@@ -400,6 +485,21 @@ main{
             }
         }
     }
+    .contactoPrincipal{
+        width: 70%;
+        font-size: 70%;
+        
+    }
+    .contactoPrincipal{
+        .comentario{
+            input{
+                width:75%;
+            }
+            textarea{
+                width: 75%;
+            }
+        }
+    }
 }
 }
 
@@ -424,11 +524,41 @@ main{
     .grid-merch{
     grid-template-columns: 1fr;
     }
-    
+    .fondoTour{
+        .tour{
+            h2{
+                font-size: 28px;
+            }
+        }
+    }
+    .fondoTour{
+        .bloques-tour{
+            div{
+                .continentes{
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+    .fondoTour{
+        .bloques-tour{
+            div{
+                .paises{
+                    font-size: 13px;
+                }
+            }
+        }
+    }
 }
 }
 
 @media screen and (max-width:400px){
+.navbar-brand{
+    img{
+        width: 80px;
+        height: 80px;
+    }
+}
 main{
     .discografia{
         .album{
@@ -446,6 +576,22 @@ main{
     .hero{
         p{
         text-align: center;
+        }
+    }
+}
+footer{
+    h2{
+        img{
+            width: 80px;
+            height: 80px;
+        }
+    }
+    div{
+        a{
+            img{
+                width: 30px;
+                height: 30px;
+            }
         }
     }
 }
